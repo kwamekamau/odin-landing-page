@@ -15,8 +15,16 @@ body {
 }
 
 .header {
-
+    color: ;
     background-color: #1f2937;
+}
+
+.header .logo {
+    color: #f9faf8;
+}
+
+li {
+    color: #e5e7eb;
 }
 
 .hero {
@@ -24,21 +32,40 @@ body {
     flex: 1;
 }
 
+h1 {
+    color: #f9faf8;
+}
+
+.hero p {
+    color: #e5e7eb;
+}
+
 .random-info {
-    background-color: white;
+    background-color: #f9faf8;
     flex: 1;
 }
 
+h2 {
+    color: #1f2937;
+}
+
 .testimonial {
+    color: #1f2937;
     background-color: #e5e7eb;
     flex: 1;
 }
 
 .cta {
-    background-color: white;
+    color: #f9faf8;
+    background-color: #f9faf8;
     flex: 1;
 }
 
+.cta-wrapper {
+    background-color: #3882f6;
+}
+
 .footer {
+    color: #e5e7eb;
     background-color: #1f2937;
 }
