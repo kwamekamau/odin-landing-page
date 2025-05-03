@@ -101,8 +101,8 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* For some unknown reason, "justify-content: center;" is having no effect,
-    so I have used text-align attribute. */
+    /* For some unknown reason, "justify-content: center;" is having no effect
+    (works as expected in hero), so I'm using the text-align attribute. */
     text-align: center;
 }
 
