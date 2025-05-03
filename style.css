@@ -8,15 +8,28 @@
     font-family: Roboto, sans-serif;
 }
 
+html {
+    background-color: #1f2937;
+}
+
 body {
     display: flex;
     flex-direction: column;
+    margin: auto;
     height: 100vh;
+    max-width: 1400px;
     font-size: 18px;
 }
 
 .header {
     background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-links {
+    display: flex;
 }
 
 .logo {
@@ -31,6 +44,12 @@ li {
 .hero {
     background-color: #1f2937;
     flex: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+.hero-wrapper {
+    flex: 1;
 }
 
 h1 {
@@ -43,23 +62,57 @@ h1 {
     color: #e5e7eb;
 }
 
+button {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 40px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    border-radius: 6px;
+    border-style: none;
+}
+
 .hero .dummy-img {
-    height: 50px;
+    /* Specify width only, not height. Defining height prevents flexbox
+    "stretch" alignment functionality. */
     width: 200px;
     background-color: gray;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9faf8;
 }
 
 .random-info {
+    color: dimgray;
     background-color: #f9faf8;
     flex: 1;
-    color: dimgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.random-info .dummy-img {
-    height: 150px;
-    width: 150px;
+.images {
+    display: flex;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* For some unknown reason, "justify-content: center;" is having no effect,
+    so I have used text-align attribute. */
+    text-align: center;
+}
+
+.image .dummy-img {
+    height: 170px;
+    width: 170px;
     border: 3px solid #3882f6;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
 
 h2 {
@@ -74,6 +127,10 @@ h2 {
     flex: 1;
 }
 
+.testimonial p {
+    text-align: right;
+}
+
 blockquote {
     font-size: 36px;
     font-style: italic;
@@ -86,20 +143,32 @@ blockquote {
 }
 
 .cta {
-    color: #f9faf8;
+    color: #e5e7eb;
     background-color: #f9faf8;
     flex: 1;
 }
 
 .cta-wrapper {
     background-color: #3882f6;
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h3 {
+.cta h3 {
+    color: #f9faf8;
     font-size: 24px;
+}
+
+.cta-wrapper button {
+    border: 2px solid #f9faf8;
 }
 
 .footer {
     color: #e5e7eb;
     background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
