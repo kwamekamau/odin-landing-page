@@ -38,6 +38,7 @@ body {
     color: #f9faf8;
     font-size: 24px;
     font-weight: bold;
+    padding-right: 30px;
 }
 
 li {
@@ -145,11 +146,18 @@ h2 {
     color: #1f2937;
     background-color: #e5e7eb;
     flex: 1;
-
+    display: flex;
+    padding: 100px 0;
 }
 
-.testimonial p {
-    text-align: right;
+.flex-padding {
+    min-width: 10%;
+    flex: 1;
+}
+
+.column-wrapper {
+    min-width: 440px;
+    flex: 3;
 }
 
 blockquote {
@@ -161,20 +169,30 @@ blockquote {
 .testimonial p {
     font-size: 24px;
     font-weight: bold;
+    text-align: right;
+    padding-top: 30px;
 }
 
 .cta {
     color: #e5e7eb;
     background-color: #f9faf8;
     flex: 1;
+    padding: 100px 0;
+    display: flex;
 }
 
 .cta-wrapper {
     background-color: #3882f6;
-    margin: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 60px 100px;
+    border-radius: 10px;
+    flex: 2 1 auto;
+}
+
+.cta-text {
+    padding-right: 30px;
 }
 
 .cta h3 {
@@ -192,4 +210,5 @@ blockquote {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
