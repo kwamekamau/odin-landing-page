@@ -24,9 +24,15 @@ body {
 .header {
     background-color: #1f2937;
     display: flex;
+    /* No horizontal padding here; using .flex-padding class instead. */
+    padding: 20px 0;
+}
+
+.header-wrapper {
+    flex: 3 1 auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 150px;
 }
 
 .header-links {
@@ -38,7 +44,7 @@ body {
     color: #f9faf8;
     font-size: 24px;
     font-weight: bold;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 li {
@@ -55,12 +61,13 @@ li {
     flex: 1;
     display: flex;
     align-items: stretch;
+    /* No horizontal padding here; using .flex-padding class instead. */
     padding: 60px 0;
 }
 
 .hero-wrapper {
     display: flex;
-    flex: initial;
+    flex: auto;
 }
 
 .hero-text-wrapper {
@@ -160,6 +167,7 @@ h2 {
     background-color: #e5e7eb;
     flex: 1;
     display: flex;
+    /* No horizontal padding here; using .flex-padding class instead. */
     padding: 100px 0;
 }
 
@@ -185,6 +193,7 @@ blockquote {
     color: #e5e7eb;
     background-color: #f9faf8;
     flex: 1;
+    /* No horizontal padding here; using .flex-padding class instead. */
     padding: 100px 0;
     display: flex;
 }
