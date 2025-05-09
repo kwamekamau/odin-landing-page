@@ -83,6 +83,7 @@ h1 {
 
 .hero p {
     color: #e5e7eb;
+    margin-bottom: 8px;
 }
 
 button {
@@ -93,7 +94,6 @@ button {
     background-color: #3882f6;
     border-radius: 6px;
     border-style: none;
-    margin-top: 8px;
 }
 
 .hero .dummy-img {
@@ -219,6 +219,7 @@ blockquote {
 
 .cta-wrapper button {
     border: 2px solid #f9faf8;
+    align-self: end;
 }
 
 .footer {
